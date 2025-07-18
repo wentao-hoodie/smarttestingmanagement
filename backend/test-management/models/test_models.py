@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship, declarative_base
 import enum
 import datetime
 
-Base = declarative_base()
+from base import Base
 
 class TestCase(Base):
     __tablename__ = 'test_cases'
